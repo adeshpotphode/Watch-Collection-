@@ -1,0 +1,555 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+}
+
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* padding: 20px 10px; */
+   background-color: rgb(17, 16, 16);
+   /* margin-bottom: 50px; */
+   width: 100%;
+
+}
+
+   h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 40px;
+   }
+
+   ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+   }
+   ul li{
+    margin: 0 30px;
+   }
+
+   ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+   }
+
+
+/* ===============Section One=================== */
+.section-one{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    width: 100%;
+    .one-Container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        border-radius: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        .image-frist{
+            margin-right: 30px;
+            
+        }
+        .image-frist img {
+            width: 400px;
+            height: auto;
+            margin-left: 100px;
+            margin-top: 60px;
+            margin-right: 100px;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+        .image1-data{
+            max-width: 400px;
+            margin-left: 100px;
+            margin-top: 100px;
+            margin-right: 100px;
+            text-align: center;
+        }
+        .image1-data h1 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .image1-data h2{
+            font-size: 36px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .image1-data p {
+            font-size: 28px;
+            color: #363636;
+            margin-bottom: 20px;
+        }
+        
+        .Oder{
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: #fff;
+            border: 2px solid #333;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .Oder:hover{
+            background-color: #012042;
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .one-Container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        .image-frist {
+            margin: 0 0 20px 0;
+        }
+    
+        .image1_data {
+            margin: 0;
+        }
+    
+        .image1_data button {
+            margin: 10px 0;
+        }
+    }
+}
+
+video{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ===============Section Two=================== */
+.section-two {
+    padding: 100px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .two-Container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Space between the text and image */
+  }
+  
+  /* Text Content Styling */
+  .image2-data {
+    max-width: 500px; /* Limit the width of the text container */
+  }
+  
+  .image2-data h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .image2-data p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  /* Button Styling */
+
+  .Oder2{
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: #fff;
+    border: 2px solid #333;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.Oder2:hover{
+    background-color: #012042;
+    transform: scale(1.05);
+}
+  
+  /* Image Container Styling */
+  .image-second {
+    max-width: 400px; /* Restrict image size */
+  }
+  
+  .image-second img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+  
+  /* Style Adjustments for Smaller Screens */
+  @media (max-width: 768px) {
+    .two-Container {
+      flex-direction: column; /* Stack image and text vertically on small screens */
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  
+    .image-second {
+      margin-top: 20px; /* Add spacing above the image */
+    }
+  }
+
+/* ================section three================ */
+  .section-three {
+    background: #f5f5f5; /* Light grey background */
+    padding: 50px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-three h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Container for Aligning Items Side-by-Side */
+  .three-Container {
+    display: flex; /* Create a flex container for parallel layout */
+    justify-content: center; /* Center align items */
+    align-items: center;
+    gap: 30px; /* Space between the cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  /* Individual Item Card Styling */
+  .image3-data {
+    background: #fff; /* White background for each item */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    transition: transform 0.3s ease; /* Smooth scale on hover */
+    max-width: 300px; /* Limit the width of each card */
+    text-align: center;
+  }
+  
+  .image3-data img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .image3-data h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .image3-data p {
+    font-size: 20px;
+    color: #ff6f61;
+    margin: 10px 0;
+  }
+  
+  /* Button Styling */
+  .image3-data button {
+    background-color: #ff6f61; /* Button color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .image3-data button:hover {
+    background-color: #ff4c3b; /* Button hover effect */
+  }
+  
+  /* Hover Effect for Each Card */
+  .image3-data:hover {
+    transform: translateY(-10px); /* Lift up effect */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .three-Container {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .image3-data {
+      margin-bottom: 20px; /* Spacing between stacked items */
+    }
+  }
+/* ===================Section Four================= */
+.section-four {
+    background: url('/img/watch.jpg') no-repeat center center/cover; /* Background image styling */
+    padding: 100px 0; /* Padding to add spacing */
+    font-family: Arial, sans-serif;
+    position: relative; /* Positioning for overlay content */
+    text-align: center;
+    color: white; /* Text color for contrast */
+    overflow: hidden; /* Prevent overflow during animation */
+    animation: fadeIn 2s ease-in-out forwards; /* Animation effect */
+  }
+  
+  /* Fade-in Animation for Background */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(1.05); /* Slight zoom effect */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* Normal scale */
+    }
+  }
+  
+  /* Container Styles */
+  .section-four > div {
+    position: relative; /* Ensure div content is positioned correctly */
+    z-index: 2; /* Layer above the background */
+  }
+  
+  /* Text and Button Styling */
+  .section-four h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow for readability */
+  }
+  
+  .section-four button {
+    background-color: #ff6f61; /* Button color */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .section-four button:hover {
+    background-color: #ff4c3b; /* Button hover effect */
+  }
+  
+  /* Dark Overlay to Enhance Text Visibility */
+  .section-four::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    z-index: 1; /* Place below text content */
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    .section-four {
+      padding: 60px 0; /* Reduce padding on smaller screens */
+    }
+  
+    .section-four h1 {
+      font-size: 36px;
+    }
+  
+    .section-four button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+
+
+/* ===================Section Five================= */
+.section-five {
+  padding: 60px 20px; 
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.section-five h1 {
+  font-size: 2.5rem; 
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+  font-family: 'Arial', sans-serif; 
+}
+
+.grid-card-container {
+  width: 60%;
+  height: 80vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.2rem;
+  grid-auto-rows: 15rem;
+}
+
+.grid-card {
+  background: #e5e5e5;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-card:nth-child(1) {
+  grid-row: 1/4;
+  background-image: url("/img/rado watch.jpg");
+}
+
+.grid-card:nth-child(2) {
+  background-image: url("/img/geneve watch.jpg");
+}
+
+.grid-card:nth-child(3) {
+  grid-row: 1/3;
+  background-image: url("/img/tissot watch.jpg");
+}
+
+.grid-card:nth-child(4) {
+  grid-row: 3/4;
+  background-image: url("/img/cartier watch.jpg");
+}
+
+.grid-card:nth-child(5) {
+  background-image: url("/img/omega watch.jpg");
+}
+
+.grid-card:nth-child(6) {
+  background-image: url("/img/fitron watch.jpg");
+}
+
+.grid-card::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 1s ease-in-out;
+}
+
+.grid-card:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.grid-card::after {
+  content: attr(collection);
+  position: absolute;
+  text-transform: uppercase;
+  background: #f9e3bc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 1.7rem;
+  font-size: 1.1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out;
+}
+
+.grid-card:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+/*========== FOOTER ==========*/
+.footer {
+  background-color: #2c3e50; /* Dark navy blue */
+  color: #fff; /* White text */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info, .footer-contact, .footer-social {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+}
+
+.footer-info h3, .footer-contact h3, .footer-social h3 {
+  color: #8b5b29; /* Burgundy */
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #fff; /* White text for links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin: 0 10px;
+  font-size: xx-large ;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9em;
+  border-top: 1px solid #8b5b29; /* Burgundy border on top */
+  padding-top: 15px;
+}
+
+
+
+.search-container {
+  display: flex;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  margin-right: 5px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
